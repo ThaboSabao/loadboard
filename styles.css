@@ -1,0 +1,162 @@
+:root {
+    --background: rgba(200, 200, 200, 0.5);
+}
+
+* {
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+    outline: none;
+}
+
+body {
+    background-color: var(--background);
+    margin: 0;
+    overflow-x: hidden;
+}
+
+button {
+    border: none;
+    margin: 0.5em;
+    padding: 0.5em;
+    border-radius: 0.5em;
+    font-weight: bolder;
+    font-size: 0.8em;
+    background-color: rgb(238, 140, 28);
+    color: white;
+    text-transform: uppercase;
+    cursor: pointer;
+    box-shadow: 0 0.2em 0.2em rgba(0, 0, 0, 0.1);
+
+}
+
+button:hover {
+    background-color: rgb(235, 132, 15);
+}
+
+button:active {
+    box-shadow: none;
+}
+
+label {
+    font-size: 0.6em;
+    font-weight: bolder;
+    color: rgba(100, 100, 100, 1);
+}
+
+input {
+    border: none;
+    border: 0.05em solid var(--background);
+    border-radius: 0.5em;
+    box-shadow: none;
+    padding: 0.5em;
+    font-size: 1.5em;
+    font-weight: bold;
+}
+
+select {
+    border: none;
+    border: 0.05em solid var(--background);
+    border-radius: 0.5em;
+    box-shadow: none;
+    padding: 0.5em;
+    font-size: 1.5em;
+    font-weight: bold;
+}
+
+.advertise-form-toggle-cont {
+    margin: 1em 0;
+    width: 100%;
+    display: flex;
+    flex: row wrap;
+    justify-content: space-evenly;
+}
+
+.form-wrap {
+    width: 100%;
+    max-width: 50em;
+    margin: 2em auto;
+    padding: 1em;
+    border: 0.05em solid var(--background);
+    border-radius: 0.5em;
+    background-color: white;
+    display: none;
+}
+
+.input-wrap {
+    width: 100%;
+    padding: 0.5em;
+    margin: 0.5em 0;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-evenly;
+}
+
+.input-wrap * {
+    display: block;
+}
+
+.add-vehicle {
+    padding: 0.5em;
+}
+
+.location-cont {
+    margin: 0.5em;
+    border: 0.05em solid var(--background);
+    border-radius: 0.5em;
+    padding: 0.5em;
+}
+
+.location-cont input {
+    width: 100%;
+}
+
+.location-cont > label {
+    margin: 1em 0;
+}
+
+.add-btn-cont {
+    padding: 1em;
+    width: 100%;
+    text-align: center;
+}
+
+#vehicle-list > div {
+    width: 70%;
+    margin: auto;
+    padding: 0.25em 0;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-evenly;
+    border-bottom: 0.05em solid var(--background);
+    font-size: 0.8em;
+    font-weight: bold;
+}
+
+#vehicle-list > div > div {
+    width: 25%;
+}
+
+#vehicle-list > div > div:nth-child(1) {
+    color: rgba(100, 100, 100, 1);
+}
+
+#loadboard-cont {
+    width: 100%;
+    max-width: 70em;
+    margin: auto;
+    padding: 1em 2em;
+}
+
+#loadboard-cont > div {
+    display: flex;
+    flex-flow: row wrap;
+    padding: 0.5em 0;
+    border-bottom: 0.05em solid white;
+}
+
+#loadboard-cont > div > div {
+    width: 20%;
+    min-width: 10em;
+    padding: 0.5em 0;
+    text-align: center;
+}
